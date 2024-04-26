@@ -1,0 +1,517 @@
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-family: 'th';
+    src: url(fonts\threed.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'CON';
+    src: url(fonts/24730175740.ttf);
+}
+@font-face {
+    font-family: 'Ramp';
+    src: url(Fonts/RampartOne-Regular.ttf);
+}
+body {
+    background-color: white;
+    background: linear-gradient(90deg, rgb(63, 148, 245) 0%, rgb(131, 220, 255)50%, rgb(228, 253, 254) 100%);
+}
+.mainBlock {
+    font-family: 'CON';
+}
+.mainTitle {
+    font-size: 48px;
+    font-family: 'Ramp';
+    display: flex;
+    justify-content: center;
+}
+.titre {
+    font-family: 'Ramp';
+    font-size: 48px;
+}
+
+a{
+    text-decoration: none;
+}
+#moreAboutButton {
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-family: 'CON';
+    font-size: 16px;
+    border-color:rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
+    height: 35px;
+    width: 110px;
+    transition: color 0.3s, background-color 0.3s, opacity 0.05s;
+    padding-top: 4px;
+}
+#moreAboutButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#moreAboutButton:active {
+    opacity: 0.7;
+}
+#moreAboutButtonBlock {
+    display: flex;
+    justify-content: center;
+}
+.navBar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 10px;
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+
+}
+.mainBlock {
+    border: orchid solid 5px;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-family: 'Ramp';
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    color: white;
+}
+
+#menu {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: background-color 0.35s;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 70px;
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+#menu:hover {
+    background-color: #111;
+}
+
+#imageOfTheDay {
+    width: 30% ;
+    height: 30%;
+    border-width: 5px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+.imgBox {
+    display: flex;
+    justify-content: center;
+}
+
+#semiTitle-1 {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 90px;
+    width: 400px;
+    border-radius: 25px;
+}
+.semiTitle {
+    display: flex;
+    justify-content: center;
+}
+#penguinOfTheDay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.bottomBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#myP {
+    display: flex;
+    align-items: center;
+}
+#myText {
+    text-align: center;
+}
+
+footer {
+    margin-top: 150px;
+    background-color: #2d9bf0;
+    width: 99%;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: absolute;
+    /* border: 10px solid black; */
+}
+.footerBlock1 {
+    /* border: 5px solid rgb(255, 0, 0); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerButton {
+    /* border: 3px solid rgb(81, 255, 0); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+}
+#footerButton {
+    border: 1px #1f69a2 solid;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #1f69a2;
+    transition: background-color 0.1s, color 0.1s;
+}
+#footerButton:hover {
+    background-color: #1f69a2;
+    color: black;
+    cursor: pointer;
+}
+#footerButton:active {
+    opacity: 0.6;
+}
+.footerButtonText {
+    color: #1f69a2;
+}
+#socialLogo {
+    border: 1px transparent solid;
+    height: 50px;
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.socialLogo {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    padding: 5px;
+}
+#img1 {
+    content: url("https://seeklogo.com/images/T/tiktok-black-icon-logo-CF54F85379-seeklogo.com.png");
+}
+#img2 {
+    content: url("https://www.pngall.com/wp-content/uploads/15/Black-Instagram-Logo-PNG-Picture.png");
+}
+#img3{
+    content: url("https://pngimg.com/d/youtube_button_PNG7.png");
+}
+.socialLink {
+    height: 45px;
+    width: 45px;
+}
+.socialButton {
+    border: 1px #1f69a2 solid;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #1f69a2;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background-color 0.1s, color 0.1s;
+    display: flex;
+    justify-content: center;
+}
+.socialButton:hover {
+    background-color: #1f69a2;
+}
+.socialButton:active {
+    opacity: 0.8;
+}
+.footerBlock2 {
+    /* border: 5px solid rgb(255, 255, 0); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerTextParent {
+    display: flex;
+    flex-direction: column;
+    
+}
+.footerText {
+    /* border: 5px solid rgb(225, 0, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    width: 220px;
+}
+#socialLogo {
+    display: flex;
+    justify-content: space-between;
+}
+.footerText {
+    color: #1f69a2;
+}
+.footerLogo {
+    color: #1f69a2;
+    font-size: 24px;
+    font-family: 'Ramp';
+}
+#coolFooterPenguin {
+    color: #2d9bf0;
+}
+
+
+
+/* Gallery */
+.galleryBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galleryImageTexte {
+    /* border: rgb(0, 0, 0) solid 5px; */
+    max-height: 586px;
+    max-width: 1041px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.galleryTexteImage {
+    /* border: rgb(0, 0, 0) solid 5px; */
+    max-height: 586px;
+    max-width: 1041px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.galleryImageBouton {
+    /* border: rgb(255, 255, 255) solid 5px; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.galleryTexte {
+    /* border: rgb(255, 0, 0) solid 5px; */
+    border: rgb(255, 255, 255) solid 2px;
+    border-radius: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+.galleryImage {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 7px;
+}
+
+
+/* Documentation */
+.documentationBlock {
+    /* border: black solid 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 100px;
+}
+.documentationTopBlock {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    max-height: 300px;
+    max-width: 1041px;
+}
+.documentationTopText {
+    /* border: rgb(255, 255, 255) solid 5px; */
+    border: white solid 2px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 95%;
+}
+.documentationText {
+    /* border: rgb(255, 0, 0) solid 5px; */
+    text-align: center;
+    font-size: 20px;
+}
+.documentationBottomBlock {
+    /* border: rgb(80, 0, 0) solid 5px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    max-width: 1041px;
+    max-height: 600px;
+    
+}
+.documentationBottomText {
+    /* border: rgb(255, 196, 0) solid 5px; */
+    border: white solid 2px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 45%;
+}
+.documentationBottomRightBlock {
+    /* border: rgb(89, 255, 0) solid 5px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
+.documentationTitle {
+    /* border: rgb(0, 93, 97) solid 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    max-height: 93.51px;
+    height: 15%;
+    width: 100%;
+}
+.documentationImage {
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+}
+.documentationImageBlock {
+    /* border: rgb(47, 0, 255) solid 5px; */
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+/* .documentationTextTitle {
+    border: rgb(242, 0, 255) solid 5px;
+}  */
+
+
+
+/* Who am i */
+.whoAmIMain {
+    border: black solid 5px;
+    /* max-width: 95%; */
+     height: 6000px;
+}
+.whoAmIBlock {
+    border: rgb(255, 255, 255) solid 5px;
+    display: flex;
+    justify-content: center;
+}
+#whoAmIBlock3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.whoAmITitle {
+    border: rgb(255, 0, 0) solid 5px;
+    display: flex;
+    justify-content: center;
+
+}
+.whoAmIText {
+    border: rgb(238, 255, 0) solid 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#whoAmIText {
+    width: 90%;
+}
+.whoAmIContent {
+    border: rgb(34, 255, 0) solid 5px;
+    width: 45%;
+}
+#whoAmIContentLeft {
+    position: relative;
+    background-color: green;
+    left: 23%;
+    transition: transform 0.7s;
+}
+#whoAmIContentBlock:hover {
+    #whoAmIContentLeft {
+        transform: translate(-50%);
+    }
+    #whoAmIContentRight {
+        transform: translate(50%);
+        animation: myAnimationHover 1s;
+    }
+}
+@keyframes myAnimationHover {
+    0% {transform: translateX(0%)}
+    100% {transform: translateX(50%)}
+}
+#whoAmIContentRight {
+    position: relative;
+    background-color: wheat;
+    right: 23%;
+    transition: transform 0.7s;
+    animation: myAnimation 3s infinite;
+}
+@keyframes myAnimation {
+    0% {transform: translateX(0%)}
+    25% {transform: translateX(13%)}
+    50% {transform: translateX(13%)}
+    100% {transform: translateX(0%)}
+}
+@keyframes myAnimationHover {
+    0% {transform: translateX(0%)}
+    100% {transform: translateX(50%)}
+}
+#whoAmIContentBlock {
+}
+#Al0zPenguin {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+photo a recentrer
