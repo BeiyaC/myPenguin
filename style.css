@@ -71,11 +71,7 @@ a{
     padding-left: 10px;
     position: sticky;
     top: 5px;
-    z-index: 1;
-
-}
-.mainBlock {
-    border: orchid solid 5px;
+    z-index : 1;
 }
 
 .logo {
@@ -186,7 +182,7 @@ footer {
     border-radius: 25px;
     background-color: transparent;
     color: #1f69a2;
-    transition: background-color 0.1s, color 0.1s;
+    transition: background-color 0.25s, color 0.25s;
 }
 #footerButton:hover {
     background-color: #1f69a2;
@@ -434,45 +430,54 @@ footer {
 
 /* Who am i */
 .whoAmIMain {
-    border: black solid 5px;
-    /* max-width: 95%; */
-     height: 6000px;
+    /* border: black solid 5px; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .whoAmIBlock {
-    border: rgb(255, 255, 255) solid 5px;
+    /* border: rgb(255, 255, 255) solid 5px; */
+    width: 100%;
+    height: 90%;
+    max-height: 500px;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
 }
 #whoAmIBlock3 {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .whoAmITitle {
-    border: rgb(255, 0, 0) solid 5px;
+    /* border: rgb(255, 0, 0) solid 5px; */
+    border: white 2px solid;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
-
+    position: relative;
+    animation: ease-in infinite;
 }
 .whoAmIText {
-    border: rgb(238, 255, 0) solid 5px;
+    /* border: rgb(238, 255, 0) solid 5px; */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-#whoAmIText {
-    width: 90%;
 }
 .whoAmIContent {
     border: rgb(34, 255, 0) solid 5px;
+    border: white solid 7px;
+    border-radius: 50px;
     width: 45%;
 }
 #whoAmIContentLeft {
+    display: flex;
+    align-items: center;
     position: relative;
-    background-color: green;
     left: 23%;
     transition: transform 0.7s;
 }
@@ -483,6 +488,7 @@ footer {
     #whoAmIContentRight {
         transform: translate(50%);
         animation: myAnimationHover 1s;
+
     }
 }
 @keyframes myAnimationHover {
@@ -491,27 +497,32 @@ footer {
 }
 #whoAmIContentRight {
     position: relative;
-    background-color: wheat;
-    right: 23%;
+    right: 23.5%;
     transition: transform 0.7s;
-    animation: myAnimation 3s infinite;
+    animation: myAnimation 1s infinite;
+    background-color: #de092d
 }
 @keyframes myAnimation {
-    0% {transform: translateX(0%)}
-    25% {transform: translateX(13%)}
-    50% {transform: translateX(13%)}
-    100% {transform: translateX(0%)}
-}
-@keyframes myAnimationHover {
-    0% {transform: translateX(0%)}
-    100% {transform: translateX(50%)}
-}
-#whoAmIContentBlock {
+    0% {rotate: 0deg;}
+    25% {rotate: 3deg;}
+    50% {rotate: -3deg}
+    100% {rotate: 0deg;}
 }
 #Al0zPenguin {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 50px;
 }
-
-
-photo a recentrer
+#whoAmITitle {
+    border: none;
+    width: 35%;
+    max-height: 75px;
+}
+#whoAmITitleFont {
+    font-size: 35px;
+}
+#whoAmIFuturProjects {
+    margin-top: 20px;
+    max-width: 700px;
+    max-height: 350px;
+}
